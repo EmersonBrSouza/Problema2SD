@@ -1,0 +1,1125 @@
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+Info: Linking ProblemaMQTT.elf
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:261: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:270: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:380: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+hello_world_small.c:385:13: warning: multi-character character constant
+hello_world_small.c: In function 'printInt':
+hello_world_small.c:385: warning: passing argument 2 of 'sprintf' makes pointer from integer without a cast
+Info: (ProblemaMQTT.elf) 6760 Bytes program size (code + initialized data).
+Info:                    1188 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+Info: Linking ProblemaMQTT.elf
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:261: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:270: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:380: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+Info: (ProblemaMQTT.elf) 6768 Bytes program size (code + initialized data).
+Info:                    1180 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+Info: Linking ProblemaMQTT.elf
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:168: warning: unused variable 'miss'
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:261: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:270: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:380: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+Info: (ProblemaMQTT.elf) 6760 Bytes program size (code + initialized data).
+Info:                    1188 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+Info: Linking ProblemaMQTT.elf
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:261: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:270: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:380: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+Info: (ProblemaMQTT.elf) 6760 Bytes program size (code + initialized data).
+Info:                    1188 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+Info: Linking ProblemaMQTT.elf
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:261: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:270: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:380: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+Info: (ProblemaMQTT.elf) 6744 Bytes program size (code + initialized data).
+Info:                    1204 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:261: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:264: error: 'connectMessage' undeclared (first use in this function)
+hello_world_small.c:264: error: (Each undeclared identifier is reported only once
+hello_world_small.c:264: error: for each function it appears in.)
+hello_world_small.c:270: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:380: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+make: *** [obj/default/hello_world_small.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:261: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:264: error: 'connectMessage' undeclared (first use in this function)
+hello_world_small.c:264: error: (Each undeclared identifier is reported only once
+hello_world_small.c:264: error: for each function it appears in.)
+hello_world_small.c:270: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:380: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+make: *** [obj/default/hello_world_small.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+Info: Linking ProblemaMQTT.elf
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:261: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:270: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:380: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+Info: (ProblemaMQTT.elf) 6708 Bytes program size (code + initialized data).
+Info:                    1240 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+Info: Linking ProblemaMQTT.elf
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:168: warning: unused variable 'miss'
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:261: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:270: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:380: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+Info: (ProblemaMQTT.elf) 6708 Bytes program size (code + initialized data).
+Info:                    1240 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+Info: Linking ProblemaMQTT.elf
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:261: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:270: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:380: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+Info: (ProblemaMQTT.elf) 6708 Bytes program size (code + initialized data).
+Info:                    1240 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+Info: Linking ProblemaMQTT.elf
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:261: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:270: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+Info: (ProblemaMQTT.elf) 6708 Bytes program size (code + initialized data).
+Info:                    1240 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:380: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+Info: Linking ProblemaMQTT.elf
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:261: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:270: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:380: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+Info: (ProblemaMQTT.elf) 6708 Bytes program size (code + initialized data).
+Info:                    1240 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+Info: Linking ProblemaMQTT.elf
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:239: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:248: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:358: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+Info: (ProblemaMQTT.elf) 6708 Bytes program size (code + initialized data).
+Info:                    1240 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:239: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:248: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'sendData':
+hello_world_small.c:273: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:292: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:384: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+hello_world_small.c: In function 'sendData':
+hello_world_small.c:416: error: expected declaration or statement at end of input
+make: *** [obj/default/hello_world_small.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:239: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:248: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'sendData':
+hello_world_small.c:273: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:292: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:384: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+hello_world_small.c: In function 'sendData':
+hello_world_small.c:416: error: expected declaration or statement at end of input
+make: *** [obj/default/hello_world_small.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+Info: Linking ProblemaMQTT.elf
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:239: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:248: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'sendData':
+hello_world_small.c:271: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:290: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:381: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+Info: (ProblemaMQTT.elf) 6840 Bytes program size (code + initialized data).
+Info:                    1108 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+Info: Linking ProblemaMQTT.elf
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+Info: (ProblemaMQTT.elf) 6844 Bytes program size (code + initialized data).
+hello_world_small.c:168: warning: unused variable 'miss'
+Info:                    1104 Bytes free for stack + heap.
+hello_world_small.c: In function 'startConnection':
+Info: Creating ProblemaMQTT.objdump
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+[ProblemaMQTT build complete]
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:239: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:248: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'sendData':
+hello_world_small.c:272: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:291: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:382: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+Info: Linking ProblemaMQTT.elf
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:239: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:248: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'sendData':
+hello_world_small.c:272: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:291: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:382: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+Info: (ProblemaMQTT.elf) 6844 Bytes program size (code + initialized data).
+Info:                    1104 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+Info: Linking ProblemaMQTT.elf
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:239: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:248: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'sendData':
+hello_world_small.c:272: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:291: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:382: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+Info: (ProblemaMQTT.elf) 6844 Bytes program size (code + initialized data).
+Info:                    1104 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:170: warning: implicit declaration of function 'alt_putstr'
+hello_world_small.c:178: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+Info: Linking ProblemaMQTT.elf
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:207: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:209: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:239: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:248: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'sendData':
+hello_world_small.c:272: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:291: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:382: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+Info: (ProblemaMQTT.elf) 6844 Bytes program size (code + initialized data).
+Info:                    1104 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+Info: Linking ProblemaMQTT.elf
+hello_world_small.c:169: warning: implicit declaration of function 'alt_putstr'
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:176: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:187: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:189: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+Info: (ProblemaMQTT.elf) 6840 Bytes program size (code + initialized data).
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:219: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+Info:                    1108 Bytes free for stack + heap.
+hello_world_small.c:228: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+hello_world_small.c: In function 'sendData':
+[ProblemaMQTT build complete]
+hello_world_small.c:251: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:270: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:361: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:169: warning: implicit declaration of function 'alt_putstr'
+hello_world_small.c:176: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+Info: Linking ProblemaMQTT.elf
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:187: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:189: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:219: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:228: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'sendData':
+hello_world_small.c:252: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:271: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:359: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+Info: (ProblemaMQTT.elf) 6840 Bytes program size (code + initialized data).
+Info:                    1108 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:169: warning: implicit declaration of function 'alt_putstr'
+Info: Linking ProblemaMQTT.elf
+hello_world_small.c:176: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:187: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:189: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+Info: (ProblemaMQTT.elf) 6980 Bytes program size (code + initialized data).
+Info:                    968 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:219: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+[ProblemaMQTT build complete]
+hello_world_small.c:228: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'sendData':
+hello_world_small.c:252: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:271: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'closeMQTT':
+hello_world_small.c:296: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:305: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:388: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:169: warning: implicit declaration of function 'alt_putstr'
+hello_world_small.c:176: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+Info: Linking ProblemaMQTT.elf
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:187: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:189: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:219: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:228: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'sendData':
+hello_world_small.c:252: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:271: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'closeMQTT':
+Info: (ProblemaMQTT.elf) 6980 Bytes program size (code + initialized data).
+hello_world_small.c:296: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+Info:                    968 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+hello_world_small.c:305: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:388: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:169: warning: implicit declaration of function 'alt_putstr'
+hello_world_small.c:176: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+Info: Linking ProblemaMQTT.elf
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:187: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:189: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:219: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:228: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'sendData':
+hello_world_small.c:252: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:271: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'closeMQTT':
+hello_world_small.c:296: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:305: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:388: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+Info: (ProblemaMQTT.elf) 6980 Bytes program size (code + initialized data).
+Info:                    968 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:169: warning: implicit declaration of function 'alt_putstr'
+Info: Linking ProblemaMQTT.elf
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:176: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:187: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:189: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:219: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:228: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'sendData':
+hello_world_small.c:252: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:271: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'closeMQTT':
+hello_world_small.c:296: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:305: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'closeConnection':
+hello_world_small.c:318: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:319: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:391: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+Info: (ProblemaMQTT.elf) 7012 Bytes program size (code + initialized data).
+Info:                    936 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../ProblemaMQTT_bsp//HAL/inc -I../ProblemaMQTT_bsp/ -I../ProblemaMQTT_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'sendCommand':
+hello_world_small.c:169: warning: implicit declaration of function 'alt_putstr'
+hello_world_small.c:176: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+Info: Linking ProblemaMQTT.elf
+nios2-elf-g++  -T'../ProblemaMQTT_bsp//linker.x' -msys-crt0='../ProblemaMQTT_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../ProblemaMQTT_bsp/  -Wl,--defsym,exit=_exit -msmallc  -Wl,-Map=ProblemaMQTT.map   -Os -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o ProblemaMQTT.elf obj/default/hello_world_small.o -lm 
+hello_world_small.c:168: warning: unused variable 'miss'
+hello_world_small.c: In function 'startConnection':
+hello_world_small.c:187: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+nios2-elf-insert ProblemaMQTT.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev uart_main --stdin_dev uart_main --stdout_dev uart_main --sopc_system_name lcd --quartus_project_dir "/home/aluno/Problema2" --sopcinfo /home/aluno/Problema2/software/ProblemaMQTT_bsp/../../lcd.sopcinfo
+hello_world_small.c:189: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'connectMQTT':
+hello_world_small.c:219: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:228: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'sendData':
+hello_world_small.c:252: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:271: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'closeMQTT':
+hello_world_small.c:296: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:305: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'closeConnection':
+hello_world_small.c:319: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c:320: warning: passing argument 1 of 'printJTAG' makes pointer from integer without a cast
+hello_world_small.c: In function 'printJTAG':
+hello_world_small.c:392: warning: passing argument 2 of '__builtin_stwio' makes integer from pointer without a cast
+Info: (ProblemaMQTT.elf) 7024 Bytes program size (code + initialized data).
+Info:                    924 Bytes free for stack + heap.
+Info: Creating ProblemaMQTT.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source ProblemaMQTT.elf >ProblemaMQTT.objdump
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project ProblemaMQTT ****
+
+make all 
+Info: Building ../ProblemaMQTT_bsp/
+make --no-print-directory -C ../ProblemaMQTT_bsp/
+[BSP build complete]
+[ProblemaMQTT build complete]
+
+**** Build Finished ****
